@@ -5,7 +5,7 @@
 # He then says to you, "Do you want to pick door No. 2?" Is it to your advantage to switch your choice?
 # 
 # Source: https://en.wikipedia.org/wiki/Monty_Hall_problem
-# Source: https://datasciencedojo.com/blog/monte-carlo-simulation-python/
+# Inspired by: https://datasciencedojo.com/blog/monte-carlo-simulation-python/
 # Created with ♥ by Alberto Frison - September 2022
 ######################################################
 
@@ -78,6 +78,7 @@ ggplot(data = results_df, aes(x = log10(x), y = val, color = type, group = type)
         caption = "Made with ♥ by Alberto Frison",
         colour = "Strategy")
 
+# Save Plot for publishing
 ggsave (filename = "charts/Chart01MCSimulation.png", device = "png", dpi = "retina", height = 1018/96, width = 1920/96)
 
 ###### - SPARE CODE
